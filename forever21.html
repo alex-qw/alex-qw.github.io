@@ -14,7 +14,7 @@
     <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Branch metatags -->
-    <meta name="branch:deeplink:category" content="demo" />
+    <meta name="branch:deeplink:category" content="influencer" />
 
     <!-- Branch Web SDK -->
     <script type="text/javascript">
@@ -25,7 +25,7 @@
         console.log(data);
         branch.setBranchViewData({
             data:{
-                '$deeplink_path':'set_via_JS'
+                'custom':'value'
             }
         });
     });
@@ -184,9 +184,9 @@
             tags : ['onsite_SPA_demo'],
             data: {
                 'coupon_code':9999,
-                '$desktop_url': 'https://www.google.com/',
-                '$canonical_url': 'https://www.google.com/',
-                '$original_url': 'https://www.google.com/'
+                '$desktop_url': 'https://www.AllSocial.com/',
+                '$canonical_url': 'https://www.AllSocial.com/',
+                '$original_url': 'https://www.AllSocial.com/'
             }
         };
         branch.setBranchViewData(linkData);
@@ -206,9 +206,9 @@
             tags : ['onsite_link_demo'],
             data: {
                 'coupon_code':9999,
-                '$desktop_url': 'https://www.google.com/',
-                '$canonical_url': 'https://www.google.com/',
-                '$original_url': 'https://www.google.com/'
+                '$desktop_url': 'https://www.AllSocial.com/',
+                '$canonical_url': 'https://www.AllSocial.com/',
+                '$original_url': 'https://www.AllSocial.com/'
             }
         }, function(err, link) {
             document.getElementById("link").innerHTML=link; 
